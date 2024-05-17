@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What house are you</title>
+</head>
+<body>
+<div id="question">
+    <h1>If you could do anything with your want what would it be</h1>
+    <button>Fling it like a bomarang</button>
+    <button>Cast a spell on the shop owner</button>
+    <button>Create 5 quadrillion billion dollar</button>
+    <button>Question reality</button>
+</div>
+<div id="results" style="display: none">
+    <h1>YOURE A HUFFLEPUFF</h1>
+    <img src="https://cdn.shopify.com/s/files/1/1541/8579/files/Hufflepuff-harry_potter_large.JPG?v=1491538917">
+</div>
+<script>
+    const selectAnswer = () => {
+        document.getElementById('question').style.display = 'none'
+        document.getElementById('results').style.display = 'block'
+    }
+
+    document.querySelectorAll("button").forEach((button) => {
+        button.addEventListener("click", selectAnswer)
+    })
+</script>
+</body>
+</html>
